@@ -1,0 +1,169 @@
+#card-main {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+
+  
+}
+
+.active {
+  display: none;
+}
+
+.card-container {
+  padding: 1%;
+  max-width: 300px; 
+  margin: 20px; 
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2); 
+  flex: 1 0 calc(25% - 40px); 
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container:hover {
+  box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3); 
+}
+
+.card-top {
+  height: 250px;
+  
+}
+
+.card-top img {
+  height: 100%;
+  width: 100%; 
+  object-fit: cover; 
+  
+}
+
+.card-bottom{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 1rem;
+  max-height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+}
+
+
+.card-container:hover .card-bottom{
+  transform: translateY(0);
+}
+
+
+.rating {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 2%;
+  padding: 2% 0;
+  
+  width: 70%;
+  
+}
+
+.company-name {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #282c3f;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-name {
+  color: #535766;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4; /* Adjusted line-height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #282c3f;
+  white-space: nowrap;
+}
+
+.current-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.discount {
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.btn-add-bag {
+  
+  margin-top: 8px;
+  
+  font-size: 18px;
+  width: 100%;
+  border:none;
+  padding: 7px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-add-bag:hover{
+  outline: none;
+  background-color:#DB7093;
+}
+
+.bag-item-count {
+  background-color: #f16565;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 18px;
+  padding: 0 6px;
+  height: 18px;
+  position: relative;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  left: 13px;
+  top: -44px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bag-img{
+  height: 20px;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
